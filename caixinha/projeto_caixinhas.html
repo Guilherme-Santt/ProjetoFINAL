@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            background-color: #302d2d;
+        }
+        .header{
+            width: 100%;
+            height: 200px;
+            font-size: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .carreira{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            margin: 70px;
+            background-image: url(promocao-de-carreira.png);
+            background-size: cover;
+            border: 5px solid black;
+            border-radius: 15px;
+            color: transparent;
+            border-radius: 25px;
+        }
+        .carreira:hover{
+            font-size: 50px;
+            text-align: center;
+            color: black;
+            box-shadow: 0px 4px 34px 15px lightseagreen;
+            -webkit-box-shadow: 0px 4px 34px 15px lightseagreen;
+            -moz-box-shadow: 0px 4px 34px 15px lightseagreen;
+            transition: 200ms linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 243, 223);
+            text-shadow: 
+               -1px -1px 0px lightseagreen;
+        }
+        .carro{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            margin: 70px;
+            background-image: url('hatchback.png');
+            border: 5px solid black;
+            background-size: cover;
+            color: transparent;
+            border-radius: 25px;
+        }
+        .carro:hover{
+            font-size: 50px;
+            text-align: center;
+            color: black;
+            transition: 200ms linear;
+            box-shadow: 0px 4px 34px 15px lightseagreen;
+            -webkit-box-shadow: 0px 4px 34px 15px lightseagreen;
+            -moz-box-shadow: 0px 4px 34px 15px lightseagreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 243, 223);
+            text-shadow: 
+               -1px -1px 0px #000000, 
+               -1px 1px 0px #000000,                    
+                1px -1px 0px #000000,                  
+                1px 0px 0px #000000;
+        }
+        .viagem{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            margin: 70px;
+            background-image: url(viagem.png);
+            border: 5px solid black;
+            background-size: cover;
+            color: transparent;
+            border-radius: 25px;
+        }
+        .viagem:hover{
+            font-size: 50px;
+            text-align: center;
+            color: black;
+            transition: 200ms linear;
+            display: flex;
+            box-shadow: 0px 4px 34px 15px lightseagreen;
+            -webkit-box-shadow: 0px 4px 34px 15px lightseagreen;
+            -moz-box-shadow: 0px 4px 34px 15px lightseagreen;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 243, 223);
+            text-shadow: 
+               -1px -1px 0px #000000, 
+               -1px 1px 0px #000000,                    
+                1px -1px 0px #000000,                  
+                1px 0px 0px #000000;
+        }
+        .sonho{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            margin: 70px;
+            background-image: url(expectativa.png);
+            border: 5px solid black;
+            background-position: center;
+            background-size: cover;
+            color: transparent;
+            border-radius: 25px;
+        }
+        .sonho:hover{
+            font-size: 50px;
+            text-align: center;
+            box-shadow: 0px 4px 34px 15px lightseagreen;
+            -webkit-box-shadow: 0px 4px 34px 15px lightseagreen;
+            -moz-box-shadow: 0px 4px 34px 15px lightseagreen;
+            color: black;
+            transition: 200ms linear;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 243, 223);
+            text-shadow: 
+               -1px -1px 0px #000000, 
+               -1px 1px 0px #000000,                    
+                1px -1px 0px #000000,                  
+                1px 0px 0px #000000;
+        }
+        .casamento{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            margin: 70px;
+            background-image: url(casal.png);
+            border: 5px solid black;
+            background-position: center;
+            background-size: cover;
+            color: transparent;
+            border-radius: 25px;
+        }
+        .casamento:hover{
+            font-size: 50px;
+            text-align: center;
+            color: black;
+            transition: 200ms linear;
+            display: flex;
+            box-shadow: 0px 4px 34px 15px lightseagreen;
+            -webkit-box-shadow: 0px 4px 34px 15px lightseagreen;
+            -moz-box-shadow: 0px 4px 34px 15px lightseagreen;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 243, 223);
+            text-shadow: 
+               -1px -1px 0px #000000, 
+               -1px 1px 0px #000000,                    
+                1px -1px 0px #000000,                  
+                1px 0px 0px #000000;
+        }
+        .outro{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            margin: 70px;
+            border: 5px solid rgb(0, 243, 223);
+            background-image: url(ponto-de-interrogacao.png);
+            border: 5px solid black;
+            background-size: cover;
+            background-position: center;
+            color: transparent;
+            border-radius: 15px;
+        }
+        .outro:hover{
+            font-size: 50px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            box-shadow: 0px 4px 34px 15px lightseagreen;
+            -webkit-box-shadow: 0px 4px 34px 15px lightseagreen;
+            -moz-box-shadow: 0px 4px 34px 15px lightseagreen;
+            align-items: center;
+            transition: 200ms linear;
+            color: #24e9df;
+            text-shadow: 
+               -1px -1px 0px #000000, 
+               -1px 1px 0px #000000,                    
+                1px -1px 0px #000000,                  
+                1px 0px 0px #000000;
+        }
+        .h1pag{
+            font-size: 30px;
+            display: flex;
+            text-align: center;
+        }
+        .pag{
+            display: flex;
+            width: 100%;
+            height: 400px;
+            justify-content: center;
+        }
+        img{
+            width: 300px;
+            border-radius: 15px;
+        }
+        .texto{
+            position: absolute;
+            font-size: 40px;
+        }
+
+        a{
+            text-decoration: none;
+            color: transparent;
+        }
+        .imgc{
+            width: 50px;
+            height: 50px;
+        }
+        
+    </style>
+<body>
+    <a  href="http://127.0.0.1/projetoFINAL/Menu.php"><img class="imgc" src="vire-a-esquerda.png"></a>
+
+    <div class="header">
+        Caixinhas <img style="width: 100px;" src="icons8-poupança-100.png" alt="">
+    </div>
+
+    <div class="pag">
+        <div class="carreira">
+            <a class href="projeto_caixinhas_carreira.html"><h1 class="h1pag">Investimento na carreira</h1></a>
+            
+        </div>
+           
+        <div class="carro">
+            <h1 class="h1pag">Carro</h1>  
+        </div>
+          
+        <div class="viagem">
+            <h1 class="h1pag">Viagens</h1>
+        </div>
+    </div>    
+
+    <div class="pag">
+        <div class="sonho">
+            <h1 class="h1pag">Sonho de consumo</h1>
+        </div>
+
+        <div class="casamento">
+            <h1 class="h1pag">Casamento</h1>
+        </div>
+
+        <div class="outro">
+            <h1 class="h1pag">Outro</h1>
+        </div>
+    </div>
+
+</body>
+</html>

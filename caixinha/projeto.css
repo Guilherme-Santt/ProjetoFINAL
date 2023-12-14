@@ -1,0 +1,36 @@
+body{
+    background-color: whitesmoke;    
+    }    
+    .filho{
+    width: 100%;
+    height: 600px;
+    background-color: #20B2AA;  
+    display: flex;
+    background-image: url(rotating_-_29939\ \(1080p\).gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    }  
+    .filho2{
+    width: 100%;
+    height: 800px;
+    background-color: blue;
+    }
+    .titulo{
+        width: 50%;
+        height: 600px;
+        text-align: center;
+    }
+    .texto{
+        width: 30%;
+        height: 100px;
+        text-align: center;
+        
+    }
+    h1{
+    color: white;    
+    }
+    img{
+    width: 500px;
+    height: 500px;    
+    }
